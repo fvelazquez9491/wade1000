@@ -1,78 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>WADE 1000 - Tarea 3.1</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Tarea 4.2 - Page 2</title>
 </head>
-<body>
-    <!-- Encabezado de la página -->
+
+<body class="container">
+
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="page02.html">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
-            </ul>
+
+        <nav class="navbar navbar-expand-lg bg-primary-subtle mb-5">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active fw-bold" aria-current="page" href="#">Page 1</a>
+                        <a class="nav-link" href="#">page 2</a>
+                        <a class="nav-link" href="#">Page 3</a>
+                    </div>
+                </div>
+            </div>
         </nav>
+
     </header>
 
-    <h1>Florentino Velazquez Vergne</h1>
-    <p>WADE 1000 - Tarea 3.1</p>
+    <section>
+        <h1 class="text-body-emphasis">Florentino Velázquez Vergne</h1>
+        <p class="mb-0"><em>WADE 1000 - Tarea 4.2</em></p>
+        <p><em>#est: 2602249491</em></p>
+        <hr>
+    </section>
 
-    <!-- Contenido principal de la página. -->
-    <main>
-        <article>
+    <main id="main" class="mt-5">
+        <section class="section">
 
-            <!-- Primera sección -->
-            <section>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, culpa.</p>
+            <h2 class="mb-3">Ventajas al utilizar BootStrap Framework</h2>
 
-                <!-- Imagen en página. -->
-                <h2>Imagen</h2>
-                <figure>
-                    <img src="media/placeholder.jpg" alt="placeholder">
-                    <figcaption>Imagen 1</figcaption>
-                </figure>
+            <div class="card text-bg-primary mb-3" style="max-width: 40rem;">
+                <div class="card-header fs-2">Ventaja #1</div>
+                <div class="card-body">
+                    <p class="card-text">El uso de Bootstrap ofrece una ventaja fundamental en cuanto a la velocidad de
+                        desarrollo. Al proporcionar una extensa biblioteca de componentes preestilizados, como botones,
+                        formularios, barras de navegación y modales, los desarrolladores no tienen que escribir cada
+                        regla de CSS desde cero. Esto permite crear prototipos funcionales y despliegues de producción
+                        en una fracción del tiempo que requeriría el diseño manual, optimizando los recursos del equipo
+                        y acelerando la entrega del proyecto.</p>
+                </div>
+            </div>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eveniet eum laudantium in architecto voluptates facilis inventore fugiat nihil praesentium?</p>
+            <div class="card text-bg-secondary mb-3" style="max-width: 40rem;">
+                <div class="card-header fs-2">Ventaja #2</div>
+                <div class="card-body">
+                    <p class="card-text">Otro beneficio crítico es su sistema de rejilla flexible y responsivo, basado
+                        en Flexbox. Esta arquitectura permite que los sitios web se adapten automáticamente a cualquier
+                        tamaño de pantalla, ya sea un teléfono móvil, una tableta o un monitor de escritorio, sin
+                        necesidad de crear múltiples versiones de la página. Gracias a sus clases predefinidas, es
+                        sencillo organizar el contenido en columnas y filas que se reordenan de manera inteligente,
+                        garantizando que la experiencia del usuario sea coherente y fluida en cualquier dispositivo.</p>
+                </div>
+            </div>
 
-                <!-- Video en página. -->
-                <h2>Video</h2>
-                <video controls>
-                    <source src="media/sample-5s-360p.mp4" type="video/mp4">
-                    Su navegador no es compatible con el elemento de video.
-                </video>
+            <div class="card text-bg-dark mb-3" style="max-width: 40rem;">
+                <div class="card-header fs-2">Ventaja #3</div>
+                <div class="card-body">
+                    <p class="card-text">Finalmente, Bootstrap destaca por su consistencia visual y su amplia comunidad
+                        de apoyo. Al basarse en estándares modernos, asegura que el diseño se vea profesional y
+                        uniforme en los diferentes navegadores web, evitando errores de compatibilidad comunes. Además,
+                        al ser uno de los marcos de trabajo más populares del mundo, existe una cantidad inmensa de
+                        documentación, plantillas y foros de ayuda, lo que facilita la resolución de problemas y la
+                        implementación de funcionalidades avanzadas de manera eficiente.</p>
+                </div>
+            </div>
 
-                <!-- Audio en página -->
-                <h2>Audio</h2>
-                <audio controls>
-                    <source src="media/sample-3s.mp3" type="audio/mp3">
-                    Su navegador no es compatible con el elemento de audio.
-                </audio>
-
-            </section>
-
-            <!-- Segunda sección -->
-            <section>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, illum sequi. Ex quo est molestiae facere! Doloribus nostrum, ullam inventore impedit nihil ipsum sequi velit perspiciatis natus? Molestias atque facere quo dicta asperiores doloremque reiciendis fuga earum ut totam quidem eaque consequuntur veritatis pariatur, ea modi, cum accusantium blanditiis impedit?</p>
-
-                <h2>Canvas</h2>
-                <canvas class="canvas"></canvas>
-
-            </section>
-        </article>
+        </section>
     </main>
 
-    <!-- Parte inferior de la página. -->
     <footer>
-        <ul>
+        <ul class="footernav">
             <li><a href="#">Contactenos</a></li>
             <li><a href="#">Site Map</a></li>
             <li><a href="#">Facebook</a></li>
             <li><a href="#">Instagram</a></li>
         </ul>
     </footer>
+    <script src="js/bootstrap.js"></script>
+
 </body>
+
 </html>
